@@ -19,8 +19,8 @@ export default function AppToolbar() {
     <HideOnScroll>
       <AppBar position="sticky" color="transparent" elevation={0}>
         <Toolbar sx={{ gap: 3 }}>
-          <Typography variant="h6" sx={{ flexGrow: 1, fontWeight: 800 }}>
-            company-site
+          <Typography variant="h5" sx={{ flexGrow: 1, fontWeight: 600 }}>
+            Nuvisoft
           </Typography>
           <Button variant="text">Services</Button>
           <Button variant="text">About</Button>
