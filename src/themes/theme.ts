@@ -2,10 +2,10 @@ import { createTheme } from "@mui/material/styles";
 
 const theme = createTheme({
   palette: {
-    primary: { main: "#2563eb" },
+    primary: { main: "#ffffff" },
     secondary: { main: "#0ea5e9" },
-    text: { primary: "#0f172a", secondary: "#475569" },
-    background: { default: "#ffffff" },
+    text: { primary: "#ffffff", secondary: "#ffffff" },
+    background: { default: "#000000" },
   },
   typography: {
     fontFamily: ["Nunito", "Poppins"].join(","),

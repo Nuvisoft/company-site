@@ -27,7 +27,7 @@ export default function Testimonials() {
       <Grid container spacing={3}>
         {testimonials.map((t, i) => (
           <Grid key={i} size={{ xs: 12, md: 4 }}>
-            <Card sx={{ height: "100%" }}>
+            <Card sx={{ height: "100%", backgroundColor: "#0b1020" }}>
               <CardContent>
                 <Typography color="text.secondary" sx={{ mb: 2 }}>
                   {t.quote}

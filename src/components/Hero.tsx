@@ -5,7 +5,6 @@ export default function Hero() {
     <Box
       sx={{
         py: { xs: 8, md: 14 },
-        background: "linear-gradient(180deg,#f8fafc, #ffffff)",
       }}
     >
       <Container>
