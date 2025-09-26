@@ -1,5 +1,10 @@
 import React from "react";
-import { useScrollTrigger, Slide } from "@mui/material";
+import {
+  useScrollTrigger,
+  Slide,
+  useTheme,
+  useMediaQuery,
+} from "@mui/material";
 import { Typography, AppBar, Toolbar, Button } from "@mui/material";
 
 type HideOnScrollProps = { children: React.ReactElement };
@@ -15,6 +20,10 @@ function HideOnScroll({ children }: HideOnScrollProps) {
 }
 
 export default function AppToolbar() {
+  const theme = useTheme();
+  const smUp = useMediaQuery(theme.breakpoints.up("sm"));
+  const buttonSize: "small" | "medium" = smUp ? "medium" : "small";
+
   return (
     <HideOnScroll>
       <AppBar position="sticky" color="transparent" elevation={0}>
@@ -22,9 +31,15 @@ export default function AppToolbar() {
           <Typography variant="h5" sx={{ flexGrow: 1, fontWeight: 600 }}>
             Nuvisoft
           </Typography>
-          <Button variant="text">Services</Button>
-          <Button variant="text">About</Button>
-          <Button variant="contained">Contact us</Button>
+          <Button variant="text" size={buttonSize}>
+            Services
+          </Button>
+          <Button variant="text" size={buttonSize}>
+            About
+          </Button>
+          <Button variant="contained" size={buttonSize}>
+            Contact us
+          </Button>
         </Toolbar>
       </AppBar>
     </HideOnScroll>
