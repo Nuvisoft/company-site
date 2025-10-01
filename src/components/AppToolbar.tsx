@@ -9,6 +9,7 @@ import {
 import { Typography, AppBar, Toolbar, Button } from "@mui/material";
 import { useTranslation } from "react-i18next";
 import { LanguageSelect } from "./LanguageSelect";
+import Magnet from "./Magnet";
 
 type HideOnScrollProps = { children: React.ReactElement };
 
@@ -48,9 +49,11 @@ export default function AppToolbar() {
             sx={{ backgroundColor: "primary.main" }}
           />
           <LanguageSelect />
-          <Button variant="contained" size={buttonSize}>
-            {t("components.toolbar.contactUs")}
-          </Button>
+          <Magnet padding={50} magnetStrength={2}>
+            <Button variant="contained" size={buttonSize}>
+              {t("components.toolbar.contactUs")}
+            </Button>
+          </Magnet>
         </Toolbar>
       </AppBar>
     </HideOnScroll>
