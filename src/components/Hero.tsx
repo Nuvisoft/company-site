@@ -1,6 +1,9 @@
 import { Box, Button, Container, Stack, Typography } from "@mui/material";
+import { useTranslation } from "react-i18next";
 
 export default function Hero() {
+  const { t } = useTranslation();
+
   return (
     <Box
       sx={{
@@ -10,17 +13,17 @@ export default function Hero() {
       <Container>
         <Stack spacing={3} maxWidth={800}>
           <Typography variant="h2" component="h1">
-            This Headline Grabs Visitors’ Attention
+            {t("components.hero.title")}
           </Typography>
           <Typography variant="h6" color="text.secondary">
-            A short description of your business
+            {t("components.hero.subtitle")}
           </Typography>
           <Stack direction="row" spacing={2}>
             <Button size="large" variant="contained">
-              Contact us
+              {t("components.hero.contactButton")}
             </Button>
             <Button size="large" variant="outlined">
-              Learn more
+              {t("components.hero.learnMoreButton")}
             </Button>
           </Stack>
         </Stack>

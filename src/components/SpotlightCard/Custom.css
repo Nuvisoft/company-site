@@ -1,0 +1,6 @@
+.custom-spotlight-card {
+  height: 100%;
+  background-color: #0b1020;
+  cursor: "default";
+  user-select: none;
+}

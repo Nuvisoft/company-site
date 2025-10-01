@@ -4,8 +4,11 @@ import {
   Slide,
   useTheme,
   useMediaQuery,
+  Divider,
 } from "@mui/material";
 import { Typography, AppBar, Toolbar, Button } from "@mui/material";
+import { useTranslation } from "react-i18next";
+import { LanguageSelect } from "./LanguageSelect";
 
 type HideOnScrollProps = { children: React.ReactElement };
 
@@ -20,6 +23,7 @@ function HideOnScroll({ children }: HideOnScrollProps) {
 }
 
 export default function AppToolbar() {
+  const { t } = useTranslation();
   const theme = useTheme();
   const smUp = useMediaQuery(theme.breakpoints.up("sm"));
   const buttonSize: "small" | "medium" = smUp ? "medium" : "small";
@@ -29,16 +33,23 @@ export default function AppToolbar() {
       <AppBar position="sticky" color="transparent" elevation={0}>
         <Toolbar sx={{ gap: 3 }}>
           <Typography variant="h5" sx={{ flexGrow: 1, fontWeight: 600 }}>
-            Nuvisoft
+            {t("global.companyName")}
           </Typography>
           <Button variant="text" size={buttonSize}>
-            Services
+            {t("components.toolbar.services")}
           </Button>
           <Button variant="text" size={buttonSize}>
-            About
+            {t("components.toolbar.about")}
           </Button>
+          <Divider
+            orientation="vertical"
+            variant="middle"
+            flexItem
+            sx={{ backgroundColor: "primary.main" }}
+          />
+          <LanguageSelect />
           <Button variant="contained" size={buttonSize}>
-            Contact us
+            {t("components.toolbar.contactUs")}
           </Button>
         </Toolbar>
       </AppBar>

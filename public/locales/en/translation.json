@@ -1,0 +1,38 @@
+{
+  "global": {
+    "companyName": "Nuvisoft"
+  },
+  "components": {
+    "toolbar": {
+      "services": "Services",
+      "about": "About",
+      "contactUs": "Contact us"
+    },
+    "hero": {
+      "title": "Your vision, our custom software",
+      "subtitle": "We create custom software and provide expert consulting to help businesses grow, streamline processes, and innovate with confidence",
+      "contactButton": "Contact us",
+      "learnMoreButton": "Learn more"
+    },
+    "services": {
+      "title": "Our Services",
+      "description": "Custom software, expert guidance, and innovative solutions to drive your business forward.",
+      "mobileApplications": {
+        "title": "Mobile Applications",
+        "description": "Our team creates mobile apps for iOS and Android, including cross-platform solutions, to reach your customers wherever they are."
+      },
+      "customWebApps": {
+        "title": "Custom Web Apps",
+        "description": "We design and develop web applications tailored to your business needs, ensuring seamless performance, scalability, and a user-friendly experience."
+      },
+      "projectAdvisory": {
+        "title": "Project Advisory",
+        "description": "We help businesses optimize their project workflows by providing expert guidance in project management, process improvement, and risk management."
+      },
+      "staffAugmentation": {
+        "title": "Staff Augmentation",
+        "description": "We provide skilled IT professionals to seamlessly extend your team, helping you scale projects faster, fill expertise gaps, and meet deadlines efficiently."
+      }
+    }
+  }
+}

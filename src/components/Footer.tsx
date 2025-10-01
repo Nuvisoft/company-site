@@ -1,6 +1,9 @@
-import { Box, Container, Stack, Typography, Link } from "@mui/material";
+import { Box, Container, Stack, Typography } from "@mui/material";
+import { useTranslation } from "react-i18next";
 
 export default function Footer() {
+  const { t } = useTranslation();
+
   return (
     <Box component="footer" sx={{ mt: 8, py: 6, bgcolor: "#0b1020" }}>
       <Container>
@@ -11,19 +14,8 @@ export default function Footer() {
           spacing={2}
         >
           <Typography color="#cbd5e1">
-            © {new Date().getFullYear()} Your Company
+            © {new Date().getFullYear()} {t("global.companyName")}
           </Typography>
-          <Stack direction="row" spacing={3}>
-            <Link href="#" color="#cbd5e1" underline="hover">
-              Privacy
-            </Link>
-            <Link href="#" color="#cbd5e1" underline="hover">
-              Terms
-            </Link>
-            <Link href="#" color="#cbd5e1" underline="hover">
-              Contact
-            </Link>
-          </Stack>
         </Stack>
       </Container>
     </Box>

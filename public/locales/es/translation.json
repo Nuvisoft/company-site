@@ -1,0 +1,38 @@
+{
+  "global": {
+    "companyName": "Nuvisoft"
+  },
+  "components": {
+    "toolbar": {
+      "services": "Servicios",
+      "about": "Nosotros",
+      "contactUs": "Contactanos"
+    },
+    "hero": {
+      "title": "Tu visión, nuestro software a medida",
+      "subtitle": "Creamos software a medida y brindamos consultoría experta para ayudar a las empresas a crecer, agilizar procesos e innovar con confianza",
+      "contactButton": "Contactanos",
+      "learnMoreButton": "Más información"
+    },
+    "services": {
+      "title": "Nuestros servicios",
+      "description": "Software a medida, asesoramiento experto y soluciones innovadoras para impulsar tu negocio.",
+      "mobileApplications": {
+        "title": "Aplicaciones móviles",
+        "description": "Nuestro equipo crea apps móviles para iOS y Android, incluidas soluciones multiplataforma, para llegar a tus clientes donde estén."
+      },
+      "customWebApps": {
+        "title": "Aplicaciones web a medida",
+        "description": "Diseñamos y desarrollamos aplicaciones web adaptadas a las necesidades de tu negocio, garantizando rendimiento, escalabilidad y una experiencia fácil de usar."
+      },
+      "projectAdvisory": {
+        "title": "Asesoría de proyectos",
+        "description": "Ayudamos a optimizar los flujos de trabajo de tus proyectos con guía experta en gestión, mejora de procesos y gestión de riesgos."
+      },
+      "staffAugmentation": {
+        "title": "Ampliación de equipos",
+        "description": "Proveemos profesionales de TI calificados para ampliar tu equipo sin fricciones, ayudándote a escalar proyectos más rápido, cubrir brechas de experiencia y cumplir plazos con eficiencia."
+      }
+    }
+  }
+}
