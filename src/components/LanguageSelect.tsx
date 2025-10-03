@@ -65,13 +65,9 @@ export function LanguageSelect({ dense = true, uppercase = false }: Props) {
         "& .MuiOutlinedInput-notchedOutline": { border: "none" },
         "&.Mui-focused .MuiOutlinedInput-notchedOutline": { border: "none" },
         "&:hover .MuiOutlinedInput-notchedOutline": { border: "none" },
-        ".MuiSelect-select": (theme) => ({
+        ".MuiSelect-select": () => ({
           py: dense ? 0.25 : 0.5,
           px: 0,
-          color: theme.palette.primary.main,
-        }),
-        "& .MuiSelect-icon": (theme) => ({
-          color: theme.palette.primary.main,
         }),
       }}
       MenuProps={{
@@ -80,7 +76,7 @@ export function LanguageSelect({ dense = true, uppercase = false }: Props) {
       }}
     >
       {LANGS.map((lang) => (
-        <MenuItem key={lang.code} value={lang.code} sx={{ color: "#000000" }}>
+        <MenuItem key={lang.code} value={lang.code}>
           {lang.label}
         </MenuItem>
       ))}

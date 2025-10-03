@@ -1,5 +1,6 @@
 import { Box, Button, Container, Stack, Typography } from "@mui/material";
 import { useTranslation } from "react-i18next";
+import { SectionId } from "@/constants";
 
 export default function Hero() {
   const { t } = useTranslation();
@@ -19,10 +20,18 @@ export default function Hero() {
             {t("components.hero.subtitle")}
           </Typography>
           <Stack direction="row" spacing={2}>
-            <Button size="large" variant="contained">
+            <Button
+              size="large"
+              variant="contained"
+              href={`#${SectionId.Contact}`}
+            >
               {t("components.hero.contactButton")}
             </Button>
-            <Button size="large" variant="outlined">
+            <Button
+              size="large"
+              variant="outlined"
+              href={`#${SectionId.About}`}
+            >
               {t("components.hero.learnMoreButton")}
             </Button>
           </Stack>

@@ -3,6 +3,7 @@ import Grid from "@mui/material/Grid";
 import BuildRoundedIcon from "@mui/icons-material/BuildRounded";
 import { useTranslation } from "react-i18next";
 import SpotlightCard from "./SpotlightCard";
+import { SectionId } from "@/constants";
 import "./SpotlightCard/Custom.css";
 
 export default function Services() {
@@ -28,7 +29,7 @@ export default function Services() {
   ];
 
   return (
-    <Stack spacing={4} sx={{ py: { xs: 4, md: 6 } }} id="services">
+    <Stack id={SectionId.Services} spacing={4} sx={{ py: { xs: 4, md: 6 } }}>
       <Typography variant="h3">{t("components.services.title")}</Typography>
       <Typography color="text.secondary" maxWidth={720}>
         {t("components.services.description")}

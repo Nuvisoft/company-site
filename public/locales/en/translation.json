@@ -33,6 +33,30 @@
         "title": "Staff Augmentation",
         "description": "We provide skilled IT professionals to seamlessly extend your team, helping you scale projects faster, fill expertise gaps, and meet deadlines efficiently."
       }
+    },
+    "contactForm": {
+      "title": "Let's talk!",
+      "subtitle": "Looking for a partner to help you grow? Fill out the form below!",
+      "labels": {
+        "name": "Name",
+        "email": "Email",
+        "message": "Tell us about your idea"
+      },
+      "errors": {
+        "nameRequired": "Your name is required",
+        "emailRequired": "Email is required",
+        "emailInvalid": "Enter a valid email",
+        "messageRequired": "Please tell us about your idea",
+        "messageMinLength": "At least 10 characters"
+      },
+      "toasts": {
+        "success": "Message sent successfully!",
+        "error": "Failed to send message. Please try again later."
+      },
+      "button": {
+        "send": "Send",
+        "sending": "Sending..."
+      }
     }
   }
 }
