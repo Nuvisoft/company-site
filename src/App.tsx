@@ -8,6 +8,7 @@ import Testimonials from "@components/Testimonials";
 import Footer from "@components/Footer";
 import BackgroundEffect from "./components/BackgroundEffect";
 import Aurora from "./components/Aurora";
+import ContactForm from "./components/ContactForm";
 
 function App() {
   return (
@@ -31,6 +32,7 @@ function App() {
         <WhyChooseUs />
         <About />
         <Testimonials />
+        <ContactForm />
       </Container>
 
       <Footer />
