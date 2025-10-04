@@ -33,6 +33,30 @@
         "title": "Ampliación de equipos",
         "description": "Proveemos profesionales de TI calificados para ampliar tu equipo sin fricciones, ayudándote a escalar proyectos más rápido, cubrir brechas de experiencia y cumplir plazos con eficiencia."
       }
+    },
+    "contactForm": {
+      "title": "¡Hablemos!",
+      "subtitle": "¿Buscas un socio para ayudarte a crecer? ¡Completa el siguiente formulario!",
+      "labels": {
+        "name": "Nombre",
+        "email": "Email",
+        "message": "Contanos tu idea"
+      },
+      "errors": {
+        "nameRequired": "Tu nombre es obligatorio",
+        "emailRequired": "El email es obligatorio",
+        "emailInvalid": "Ingresa un email válido",
+        "messageRequired": "Por favor, contanos tu idea",
+        "messageMinLength": "Al menos 10 caracteres"
+      },
+      "toasts": {
+        "success": "¡Mensaje enviado!",
+        "error": "No se pudo enviar el mensaje. Por favor, inténtalo de nuevo más tarde."
+      },
+      "button": {
+        "send": "Enviar",
+        "sending": "Enviando…"
+      }
     }
   }
 }

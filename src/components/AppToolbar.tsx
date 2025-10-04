@@ -10,6 +10,7 @@ import { Typography, AppBar, Toolbar, Button } from "@mui/material";
 import { useTranslation } from "react-i18next";
 import { LanguageSelect } from "./LanguageSelect";
 import Magnet from "./Magnet";
+import { SectionId } from "@/constants";
 
 type HideOnScrollProps = { children: React.ReactElement };
 
@@ -36,10 +37,14 @@ export default function AppToolbar() {
           <Typography variant="h5" sx={{ flexGrow: 1, fontWeight: 600 }}>
             {t("global.companyName")}
           </Typography>
-          <Button variant="text" size={buttonSize}>
+          <Button
+            variant="text"
+            size={buttonSize}
+            href={`#${SectionId.Services}`}
+          >
             {t("components.toolbar.services")}
           </Button>
-          <Button variant="text" size={buttonSize}>
+          <Button variant="text" size={buttonSize} href={`#${SectionId.About}`}>
             {t("components.toolbar.about")}
           </Button>
           <Divider
@@ -50,7 +55,11 @@ export default function AppToolbar() {
           />
           <LanguageSelect />
           <Magnet padding={50} magnetStrength={2}>
-            <Button variant="contained" size={buttonSize}>
+            <Button
+              variant="contained"
+              size={buttonSize}
+              href={`#${SectionId.Contact}`}
+            >
               {t("components.toolbar.contactUs")}
             </Button>
           </Magnet>
