@@ -5,6 +5,7 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 import TwitterIcon from '@mui/icons-material/Twitter';
 import { teamMembers } from "@/data/teamMembers";
 import type { TeamMember } from "@/data/teamMembers";
+import { isValidUrl } from '@/utils/validation';
 
 interface MemberCardProps {
   member: TeamMember;
@@ -12,7 +13,7 @@ interface MemberCardProps {
 
 const MemberCard = ({ member }: MemberCardProps) => (
   <Box
-    key={member.name}
+   
     sx={{
       flex: { xs: '1 1 100%', sm: '1 1 45%', md: '1 1 30%' },
       minWidth: { xs: 0, sm: 280, md: 320 },
@@ -27,7 +28,7 @@ const MemberCard = ({ member }: MemberCardProps) => (
         textAlign: 'center',
         width: '100%',
         height: '100%',
-        bgcolor: 'rgba(11,16,32,0.95)',
+        bgcolor: 'background.default',
         color: 'text.primary',
         boxShadow: 0,
         transition: 'transform 0.3s, box-shadow 0.3s',
@@ -61,15 +62,21 @@ const MemberCard = ({ member }: MemberCardProps) => (
           {member.bio}
         </Typography>
         <Box sx={{ mt: 2 }}>
-          <IconButton component="a" href={member.socials.linkedin} target="_blank" aria-label="LinkedIn">
-            <LinkedInIcon />
-          </IconButton>
-          <IconButton component="a" href={member.socials.github} target="_blank" aria-label="GitHub">
-            <GitHubIcon />
-          </IconButton>
-          <IconButton component="a" href={member.socials.twitter} target="_blank" aria-label="Twitter">
-            <TwitterIcon />
-          </IconButton>
+          {isValidUrl(member.socials.linkedin) && (
+            <IconButton component="a" href={member.socials.linkedin} rel="noopener noreferrer" target="_blank">
+              <LinkedInIcon />
+            </IconButton>
+          )}
+          {isValidUrl(member.socials.github) && (
+            <IconButton component="a" href={member.socials.github} rel="noopener noreferrer" target="_blank">
+              <GitHubIcon />
+            </IconButton>
+          )}
+          {isValidUrl(member.socials.twitter) && (
+            <IconButton component="a" href={member.socials.twitter} rel="noopener noreferrer" target="_blank">
+              <TwitterIcon />
+            </IconButton>
+          )}
         </Box>
       </CardContent>
     </Card>
