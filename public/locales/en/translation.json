@@ -34,6 +34,9 @@
         "description": "We provide skilled IT professionals to seamlessly extend your team, helping you scale projects faster, fill expertise gaps, and meet deadlines efficiently."
       }
     },
+    "about": {
+      "title": "Our Team"
+    },
     "contactForm": {
       "title": "Let's talk!",
       "subtitle": "Looking for a partner to help you grow? Fill out the form below!",

@@ -34,6 +34,9 @@
         "description": "Proveemos profesionales de TI calificados para ampliar tu equipo sin fricciones, ayudándote a escalar proyectos más rápido, cubrir brechas de experiencia y cumplir plazos con eficiencia."
       }
     },
+    "about": {
+      "title": "Nuestro equipo"
+    },
     "contactForm": {
       "title": "¡Hablemos!",
       "subtitle": "¿Buscas un socio para ayudarte a crecer? ¡Completa el siguiente formulario!",

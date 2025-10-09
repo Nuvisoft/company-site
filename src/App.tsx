@@ -2,9 +2,7 @@ import { Container } from "@mui/material";
 import AppToolbar from "./components/AppToolbar";
 import Hero from "@components/Hero";
 import Services from "@components/Services";
-import WhyChooseUs from "@components/WhyChooseUs";
 import About from "@components/About";
-import Testimonials from "@components/Testimonials";
 import Footer from "@components/Footer";
 import BackgroundEffect from "./components/BackgroundEffect";
 import Aurora from "./components/Aurora";
@@ -29,9 +27,7 @@ function App() {
 
       <Container component={"main"} sx={{ py: { xs: 6, md: 10 } }}>
         <Services />
-        <WhyChooseUs />
         <About />
-        <Testimonials />
         <ContactForm />
       </Container>
 
