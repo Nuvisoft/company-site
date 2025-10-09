@@ -32,7 +32,7 @@ const MemberCard = ({ member }: MemberCardProps) => (
         textAlign: "center",
         width: "100%",
         height: "100%",
-        bgcolor: "background.default",
+        backgroundColor: "#0b1020",
         color: "text.primary",
         boxShadow: 0,
         transition: "transform 0.3s, box-shadow 0.3s",
